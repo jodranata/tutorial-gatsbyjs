@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Header from '../components/header';
+import Layout from '../components/layout';
 
 const Contact = () => {
   return (
-    <div style={{ color: 'teal' }}>
+    <Layout>
       <Link to="/">Home</Link>
-      <Header headerText="some contact" />
-      <p>sends us a message</p>
-    </div>
+      <Header headerText="Reach us at the email address below!!" />
+      <p>
+        <a href="mailto:us@example.com">US</a>
+      </p>
+    </Layout>
   );
 };
 
